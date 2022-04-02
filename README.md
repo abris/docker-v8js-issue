@@ -1,8 +1,7 @@
-# Error installing V8js package
+# Error installing V8js extension
 
-The reuquirement to isntall v8js php package.
-
-Error happens when building container:
+The requirement is to fix an error when installing v8js php extension to the Docker container.
+The error happens when building container:
 
 ```
 docker compose build
