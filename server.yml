@@ -1,0 +1,13 @@
+- hosts: all
+  become: true
+  become_method: sudo
+
+  roles:
+    - role: geerlingguy.php-versions
+    - role: geerlingguy.php
+      php_webserver_daemon: "apache2"
+      php_version: "7.4"
+    - role: geerlingguy.php-pecl
+      php_pecl_install_pecl: true
+      php_pecl_extensions:
+        - v8js
